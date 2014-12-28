@@ -29,6 +29,6 @@ canvas {
 
 @for $i from 0 to $totalWaves {
     path:nth-child(#{$i}) {
-        transform: translate(0, ($i * 20px) - 100px);
+        transform: translate(0, ($i * 20px) - 110px);
     }
 }

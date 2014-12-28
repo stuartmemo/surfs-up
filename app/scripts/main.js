@@ -97,6 +97,10 @@ var setup = function () {
     createLines();
     drawBeach();
 
+    loadImage('images/deckchair.png', function (deckchair) {
+        image(deckchair, canvasWidth / 10, 100, canvasWidth / 10, canvasWidth / 10);
+    });
+
     /*
     tsw.load({surfsUp: 'audio/surfin-usa.mp3'}, function (files) {
         var bufferBox = tsw.bufferBox();
