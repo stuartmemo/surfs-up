@@ -4,7 +4,7 @@
   "dependencies": {
     "bootstrap-sass-official": "~3.3.1",
     "modernizr": "~2.8.1",
-    "p5js": "~0.3.15",
+    "p5js": "~0.5.2",
     "wavy-jones": "https://github.com/stuartmemo/wavy-jones",
     "tsw": "~0.1.13"
   }

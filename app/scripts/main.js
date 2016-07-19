@@ -20,7 +20,7 @@ var createSVGElement = function () {
     paper.setAttribute('class', 'waves');
     paper.setAttributeNS("http://www.w3.org/2000/xmlns/", "xmlns:xlink", "http://www.w3.org/1999/xlink");
 
-    document.body.appendChild(paper); 
+    document.body.appendChild(paper);
 };
 
 /**
@@ -62,7 +62,7 @@ var updateLines = function () {
         if (i % noDataPoints === 0) {
             pointX = i * pixelsPerPoint;
             pointY = (freqData[i] / 128) * (waveHeight / 2);
-            graphPoints.push('L' + pointX + ', ' + pointY); 
+            graphPoints.push('L' + pointX + ', ' + pointY);
         }
     }
 
@@ -101,23 +101,23 @@ var setup = function () {
         image(deckchair, canvasWidth / 10, 100, canvasWidth / 10, canvasWidth / 10);
     });
 
-    /*
-    tsw.load({surfsUp: 'audio/surfin-usa.mp3'}, function (files) {
+    tsw.load({surfsUp: 'audio/daydreaming-strings.mp3'}, function (files) {
         var bufferBox = tsw.bufferBox();
         bufferBox.buffer(files.surfsUp);
         console.log(bufferBox.buffer());
         tsw.connect(bufferBox, analyser, tsw.speakers);
         bufferBox.play(tsw.now());
     }, function (error) {
-        console.log(error);    
+        console.log(error);
     });
-    */
 
+    /**
     tsw.getUserAudio(function (stream) {
         tsw.connect(stream, analyser);
     }, function (error) {
         console.log(error);
     });
+    */
 };
 
 var draw = function () {
